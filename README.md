@@ -28,124 +28,61 @@ VacationPy then looks at teh Humidity data from the WeatherPY exercise and plots
 Repo contains folder "EmployeeSQL"
 
 Interior folders are:
-<ul><li>Data</li>
-<li>Queries</li>
-<li>Images</li>
-<li>Schema</li></ul>
-
-Additional"Files" folder whith Jupyter notebooks and associated resources:
-Please use notebooks titled:
- 
-<ul><li><b>WeatherPy.ipynb</b></li>
-  <li><b>vacationPy.ipynb</b></li></ul>
+<ul><li>Data- Copies of CSV Data files</li>
+<li>Queries- Query File</li>
+<li>Images- Charting Files</li>
+<li>Schema- Shema File and PNG of Schema</li>
+<li>Bonus- Jupyter Notebook for bonus work</li></ul>
   
 <h2>API Keys and Installation</h2>
 
-Please note that to run the code, the user will need to imput thier own api keys for both openweather and goodle maps in the file: api_keys.py. Failure to do so will rsult in errors in both notebooks. 
+Please note that if you wish to recreate the SQL database using the schema contained within, the import order for the csv files should be done in the following order to avoid failures during upload:
 
-<h2>Observation and Analysis</h2>
+<ul>
+<li>departments</li>
+<li>title</li>
+<li>employees</li>
+<li>salaries</li>
+<li>dept_manager</li>
+<li>dept_emp</li>
+</ul>
 
-<h2> Scatter Plots </h2>
+<h2>Observation and Analysis- Sample Data Queries</h2>
 
-!["Latitude Vs. Wind"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Latitude%20vs.%20Wind%20Speed.png)
+<h2> Query Questions </h2>
 
-!["Latitude Vs. Cloudiness (%)"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Latitude%20vs.%20Cloudiness.png)
+<ol>
+<li>List the following details of each employee: employee number, last name, first name, sex, and salary.</li>
 
-!["Latitude Vs. Humidity (%)"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Latitude%20vs.%20Humidity.png)
+<li>List first name, last name, and hire date for employees who were hired in 1986.</li>
 
-!["Latitude Vs. Max Temp"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Latitude%20vs.%20MAX%20Temperature.png)
+<li>List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.</li>
 
-<h2> Linear Regression Plots </h2>
-<h3> Max Temp</h3>
+<li>List the department of each employee with the following information: employee number, last name, first name, and department name.</li>
 
-!["Northern Hemisphere | Max Temp vs. Latitude"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Northern%20Hemisphere%20%7C%20Max%20Temp%20vs.%20Latitude%20Regression.png)
+<li>List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."</li>
 
-Northern Hemisphere | Max Temp vs. Latitude
+<li>List all employees in the Sales department, including their employee number, last name, first name, and department name.</li>
 
-The r-squared is : -0.88
+<li>List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.</li>
 
-Temperature decreases as you move south from the equator. There is a strong linear coorelation.
-
-!["Southern Hemisphere | Max Temp vs. Latitude"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Southern%20Hemisphere%20%7C%20Max%20Temp%20vs.%20Latitude%20Regression.png)
-
-Southern Hemisphere | Max Temp vs. Latitude
-
-The r-squared is : 0.75
-
-Temperature decreases as you move north from the equator. There is a strong linear coorelation. 
-
-<h3>Humidity</h3>
-
-!["Northern Hemisphere | Humidity (%) vs. Latitude"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Northern%20Hemisphere%20%7C%20Humidity%20(%25)%20vs.%20Latitude%20Regression.png)
-
-Northern Hemisphere | Humidity vs. Latitude
-
-The r-squared is : 0.27
-
-The coorelation between humidity and latitude is weak in the Northen hemisphere.  
-
-!["Southern Hemisphere | Humidity (%) vs. Latitude"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Southern%20Hemisphere%20%7C%20Humidity%20(%25)%20vs.%20Latitude%20Regression.png)
-
-Southern Hemisphere | Humidity vs. Latitude
-
-The r-squared is : 0.15
-
-The coorelation between humidity and latitude is weak in the Southern hemisphere. 
-
-<h3>Cloudiness</h3>
-
-!["Northern Hemisphere | Cloudiness (%) vs. Latitude"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Northern%20Hemisphere%20%7C%20Cloudiness%20(%25)%20vs.%20Latitude%20Regression.png)
-
-Northern Hemisphere | Cloudiness vs. Latitude
-
-The r-squared is : 0.2
-
-The coorelation between cloudiness and latitude does not exsist. 
-
-!["Southern Hemisphere | Cloudiness (%) vs. Latitude"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Southern%20Hemisphere%20%7C%20Cloudiness%20(%25)%20vs.%20Latitude%20Regression.png)
-
-Southern Hemisphere | Cloudiness vs. Latitude
-
-The r-squared is : 0.15
-
-The coorelation between cloudiness and latitude is a weak coorelation. 
-
-<h3> Wind Speed</h3>
-
-!["Northern Hemisphere - Wind Speed (mph) vs. Latitude"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Northern%20Hemisphere%20-%20Wind%20Speed%20(mph)%20vs.%20Latitude%20Regression.png)
-
-Northern Hemisphere | Wind Speed vs. Latitude
-
-The r-squared is : 0.05
-
-The coorelation between Wind Speed and latitude does not exsist.
-
-!["Southern Hemisphere - Wind Speed (mph) vs. Latitude"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/Southern%20Hemisphere%20-%20Wind%20Speed%20(mph)%20vs.%20Latitude%20Regression.png)
-
-Southern Hemisphere | Wind Speed vs. Latitude
-
-The r-squared is : -0.08
-
-The coorelation between Wind Speed and latitude does not exsist. 
-
-<h2> VacationPY </H2>
-
-Google heatmap showing humidity data as a heatmap from previous exercise WeatherPy
-
-!["Humidity Heatmap"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/vacation_humidity_heatmap.png)
-
-Hotel overlay showing my most ideal vacation locations.
-
-<ul><li>Wind Speedless than or equal to 10 MPH</li>
- <li>Cloudiness less than 10%</li>
-<li>Humidity less than 35%</li>
-<li>Temperature between 60 and 95 degress F. </li></ul>
-
-!["Hotel Overlay"](https://github.com/timsamson/Python_API_Challange/blob/main/Files/images/vacation_hotel_overlay.png)
+<li>In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.</li>
 
 
+</ol>
 
+<h2> Bonus </h2>
 
+<ol>
+<li>Average Salary by Employee Count (Histogram).</li>
+
+!["Histogram Salary by Title"](https://github.com/timsamson/sql_challange/blob/main/EmployeeSQL/Images/Salary_Histogram.png)
+
+<li>Average Salary by Employee Title.</li>
+
+!["Average Salary by Title"](https://github.com/timsamson/sql_challange/blob/main/EmployeeSQL/Images/AVG_Salary_by_Title.png)
+
+</ol>
 
 
 
