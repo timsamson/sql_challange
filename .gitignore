@@ -130,3 +130,7 @@ dmypy.json
 
 #DS.Store
 .DS_Store
+
+#config.py
+config.py
+.config.py
