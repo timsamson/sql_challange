@@ -4,10 +4,8 @@
 
 <h2>Introduction</h2>
 
-<h4>WeatherPY</h4>
-The Python API challange looks at random latitudes and longutudes to determine city locations. That data is then used to find the curretn weather (at the time of the API calls) from OpenWeather. The resulting data is then analyised with linear regression to determine if there is coorelation between four data points and thier location on with the Northern of Southern Hemisphere.
-<h4>VacationPY</h4>
-VacationPy then looks at teh Humidity data from the WeatherPY exercise and plots the data as a heatmap using Google Maps API. The data is additionally sorted via my ideal vacation location conditions as determined my me. Once the lolcation list is created, Google places API is called to determine the closest hotel to that location, if a location did not have a hotel within 5000 meters it was then dropped form the dataframe. The locations and names of the hotels were then overlayed onto the google heatmap as a layer. 
+<h4>SQL Database</h4>
+insert copy here
 
 <h2>Technologies</h2>
 
