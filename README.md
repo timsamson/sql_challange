@@ -52,20 +52,35 @@ Please note that if you wish to recreate the SQL database using the schema conta
 <ol>
 <li>List the following details of each employee: employee number, last name, first name, sex, and salary.</li>
 
+!["Question 1 Query Output Sample"](https://github.com/timsamson/sql_challange/blob/main/EmployeeSQL/Images/Question_1.png)
+
 <li>List first name, last name, and hire date for employees who were hired in 1986.</li>
+
+!["Question 2 Query Output Sample"](https://github.com/timsamson/sql_challange/blob/main/EmployeeSQL/Images/Question_2.png)
 
 <li>List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.</li>
 
+!["Question 3 Query Output Sample"](https://github.com/timsamson/sql_challange/blob/main/EmployeeSQL/Images/Question_3.png)
+
 <li>List the department of each employee with the following information: employee number, last name, first name, and department name.</li>
+
+!["Question 4 Query Output Sample"](https://github.com/timsamson/sql_challange/blob/main/EmployeeSQL/Images/Question_4.png)
 
 <li>List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."</li>
 
+!["Question 5 Query Output Sample"](https://github.com/timsamson/sql_challange/blob/main/EmployeeSQL/Images/Question_5.png)
+
 <li>List all employees in the Sales department, including their employee number, last name, first name, and department name.</li>
+
+!["Question 6 Query Output Sample"](https://github.com/timsamson/sql_challange/blob/main/EmployeeSQL/Images/Question_6.png)
 
 <li>List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.</li>
 
+!["Question 7 Query Output Sample"](https://github.com/timsamson/sql_challange/blob/main/EmployeeSQL/Images/Question_7.png)
+
 <li>In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.</li>
 
+!["Question 8 Query Output Sample"](https://github.com/timsamson/sql_challange/blob/main/EmployeeSQL/Images/Question_8.png)
 
 </ol>
 
